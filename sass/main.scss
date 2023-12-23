@@ -7,19 +7,106 @@
 }
 
 body {
-    font-family: 'Montserrat', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	background-color: #333;
 }
 
 nav {
 	text-transform: uppercase;
+	z-index: 1;
 
-	.nav-link, .navbar-nav .show>.nav-link, .navbar-brand, .fa-bars {
+	.navbar-toggler {
+		padding: 10px 15px;
+	}
+
+	.navbar-brand {
+		font-weight: bold;
+	}
+
+	.nav-link,
+	.navbar-nav .show > .nav-link,
+	.navbar-brand,
+	.fa-bars {
 		color: $white;
 	}
 
-	.nav-link:focus, .nav-link:hover, .navbar-nav .nav-link.active, .navbar-nav .show>.nav-link {
+	.nav-link:focus,
+	.nav-link:hover,
+	.navbar-nav .nav-link.active,
+	.navbar-nav .show > .nav-link,
+	.navbar-brand:focus,
+	.navbar-brand:hover {
 		color: $main-color;
+	}
+}
+
+.hero-img {
+	position: relative;
+	background-image: url(../img/playstation-small.jpg);
+	height: 100vh;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	z-index: 0;
+
+	.hero-shadow {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(0, 3, 27, 0.8);
+		z-index: -5;
+	}
+
+	.hero-text {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		height: 100%;
+		color: $white;
+		z-index: 1;
+
+		h1 {
+			text-transform: uppercase;
+		}
+
+		p {
+			text-align: center;
+		}
+
+		.fa-chevron-down {
+			position: absolute;
+			left: 50%;
+			transform: translateX(-50%);
+			bottom: 20px;
+			color: $white;
+			font-size: 30px;
+
+		}
+	}
+}
+
+.blue_text {
+	color: $main-color;
+}
+
+@media (min-width: 768px) {
+	.hero-text {
+		h1 {
+			font-size: 42px;
+		}
+
+		p {
+			font-size: 20px;
+		}
+	}	
+}
+
+@media (min-width: 1200px) {
+	.hero-img {
+		background-image: url(../img/playstation-big.jpg);
 	}
 }
 
