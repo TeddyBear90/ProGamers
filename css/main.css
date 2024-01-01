@@ -12,6 +12,7 @@ body {
 nav {
   text-transform: uppercase;
   z-index: 1;
+  transition: 0.6s;
 }
 nav .navbar-toggler {
   padding: 10px 15px;
@@ -78,6 +79,10 @@ nav .navbar-brand:hover {
 
 .blue_text {
   color: #039dff;
+}
+
+.shadow-bg {
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 @media (min-width: 768px) {

@@ -14,6 +14,8 @@ body {
 nav {
 	text-transform: uppercase;
 	z-index: 1;
+	transition: .6s;
+
 
 	.navbar-toggler {
 		padding: 10px 15px;
@@ -91,6 +93,10 @@ nav {
 .blue_text {
 	color: $main-color;
 }
+
+.shadow-bg {
+	background-color: rgba(0, 0, 0, .8);
+}	
 
 @media (min-width: 768px) {
 	.hero-text {
