@@ -85,6 +85,30 @@ nav .navbar-brand:hover {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
+.aboutus i {
+  margin-top: 20px;
+  font-size: 30px;
+}
+.aboutus .aboutus-card-title {
+  font-size: 18px;
+  text-transform: uppercase;
+}
+.aboutus .aboutus-card-text {
+  font-size: 14px;
+}
+
+.section-title {
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.underline {
+  height: 4px;
+  width: 60px;
+  background-color: #039dff;
+  margin: 0 auto 40px;
+}
+
 @media (min-width: 768px) {
   .hero-text h1 {
     font-size: 42px;

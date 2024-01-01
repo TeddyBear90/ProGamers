@@ -11,11 +11,12 @@ body {
 	background-color: #333;
 }
 
+// NAV
+
 nav {
 	text-transform: uppercase;
 	z-index: 1;
-	transition: .6s;
-
+	transition: 0.6s;
 
 	.navbar-toggler {
 		padding: 10px 15px;
@@ -85,7 +86,6 @@ nav {
 			bottom: 20px;
 			color: $white;
 			font-size: 30px;
-
 		}
 	}
 }
@@ -95,8 +95,37 @@ nav {
 }
 
 .shadow-bg {
-	background-color: rgba(0, 0, 0, .8);
-}	
+	background-color: rgba(0, 0, 0, 0.8);
+}
+
+// ABOUT US
+
+.aboutus {
+	i {
+		margin-top: 20px;
+		font-size: 30px;
+	}
+
+	.aboutus-card-title {
+		font-size: 18px;
+		text-transform: uppercase;
+	}
+	.aboutus-card-text {
+		font-size: 14px;
+	}
+}
+
+.section-title {
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.underline {
+	height: 4px;
+	width: 60px;
+	background-color: $main-color;
+	margin: 0 auto 40px;
+}
 
 @media (min-width: 768px) {
 	.hero-text {
@@ -107,7 +136,7 @@ nav {
 		p {
 			font-size: 20px;
 		}
-	}	
+	}
 }
 
 @media (min-width: 1200px) {
@@ -115,4 +144,3 @@ nav {
 		background-image: url(../img/playstation-big.jpg);
 	}
 }
-
