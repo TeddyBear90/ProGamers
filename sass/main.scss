@@ -6,9 +6,13 @@
 	padding: 0;
 }
 
+html {
+	scroll-padding-top: 74px;
+}
+
 body {
 	font-family: 'Montserrat', sans-serif;
-	background-color: #333;
+	background-color: $bg-color;
 }
 
 // NAV
@@ -16,7 +20,7 @@ body {
 nav {
 	text-transform: uppercase;
 	z-index: 1;
-	transition: 0.6s;
+	transition: background-color 0.6s;
 
 	.navbar-toggler {
 		padding: 10px 15px;
@@ -113,6 +117,114 @@ nav {
 	.aboutus-card-text {
 		font-size: 14px;
 	}
+
+	.aboutus-hover {
+		transition: color 0.3s;
+	}
+
+	.aboutus-hover:hover {
+		color: $main-color;
+	}
+}
+
+.aboutus-hero {
+	position: relative;
+	background-image: url('../img/technology-2818664_640.jpg');
+	background-size: cover;
+	background-position: center;
+	z-index: 0;
+	color: $light-gray;
+
+	.aboutus-shadow {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(0, 3, 27, 0.7);
+		z-index: -1;
+	}
+
+	.aboutus-hero-item {
+		margin: 10px 0;
+
+		i {
+			font-size: 36px;
+		}
+
+		.aboutus-hero-title {
+			font-size: 24px;
+		}
+	}
+}
+
+// Portfolio, Carousel, cards
+
+.portfolio {
+	.carousel-item {
+		height: 600px;
+	}
+
+	.carousel-caption {
+		left: 0;
+		right: 0;
+		padding: 40px 0;
+		background-color: rgba(0, 0, 0, 0.8);
+	}
+
+	.carousel-indicators {
+		padding-bottom: 20px;
+	}
+}
+
+// Prices
+
+.prices {
+	.price-box {
+		margin: 20px;
+		padding: 30px;
+		background-color: $white;
+		box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
+		transition: scale 0.3s;
+
+		.price-title {
+			color: $main-color;
+			text-transform: uppercase;
+			font-weight: bold;
+			font-size: 20px;
+		}
+
+		span {
+			font-weight: bold;
+		}
+
+		i {
+			padding: 0 5px;
+			font-size: 24px;
+		}
+
+		button {
+			padding: 10px 20px;
+			text-transform: uppercase;
+		}
+
+		.price-tag {
+			font-weight: bold;
+			font-size: 30px;
+		}
+	}
+
+	.price-info {
+		margin-top: 30px;
+
+		a {
+			text-decoration: none;
+		}
+	}
+
+	.price-box:hover {
+		scale: 1.05;
+	}
 }
 
 .section-title {
@@ -139,8 +251,18 @@ nav {
 	}
 }
 
+@media (min-width: 992px) {
+	html {
+		scroll-padding-top: 72px;
+	}
+
+	.aboutus-hero {
+		background-image: url('../img/technology-2818664_1920.jpg');
+	}
+}
+
 @media (min-width: 1200px) {
 	.hero-img {
-		background-image: url(../img/playstation-big.jpg);
+		background-image: url('../img/playstation-big.jpg');
 	}
 }
